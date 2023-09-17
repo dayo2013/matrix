@@ -6,18 +6,18 @@ const config: HardhatUserConfig = {
   solidity: "0.8.19",
   networks: {
     sepolia: {
-      url: process.env.SEPOLIA_RPC,
+      url: process.env.etheruemsepolia,
       // @ts-ignore
-      accounts: [process.env.SEPOLIA_PRIVATE_KEY]
+      accounts: [process.env.privatekey]
     },
-    goerli: {
-      url: process.env.GOERLI_RPC,
-      // @ts-ignore
-      accounts: [process.env.GOERLI_PRIVATE_KEY]
-    }
+    // goerli: {
+    //   url: process.env.GOERLI_RPC,
+    //   // @ts-ignore
+    //   accounts: [process.env.privatekey]
+    // }
   },
   etherscan: {
-    apiKey: process.env.ETHERSCAN_API_KEY
+    apiKey: process.env.apikey
   }
 };
 
