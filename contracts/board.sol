@@ -23,7 +23,6 @@ contract ColorBoard {
                 }
             }
         }
-        // console.log(cells);
     }
 
     function getColor(uint x, uint y) public returns (string memory) {
